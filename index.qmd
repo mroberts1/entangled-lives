@@ -63,15 +63,13 @@ library(palmerpenguins)
 
 ## 1. Perfect Creatures
 
-Before Laika, there were Dezik and Tsygan (Gypsy); Chizhik and Mishka (Little Bear); Albina (Whitey) and Kozyavka; Knopka (Button) and Malyshka (Little One). After her, there were Belka (Squirrel) and Strelka (Arrow); Otvazhnaya (Brave One) and Snezhinka (Snowflake), and the rabbit Marfusa; Zvedochka (Little Star); Ugolyok (Coal) and Veterok (Breeze). Some died; many survived and were sent back; some ran away. As Olesya Turkina recounts in her wonderful book *Soviet Space Dogs*,
+Before Laika, there were Dezik and Tsygan (Gypsy); Chizhik and Mishka (Little Bear); Albina (Whitey) and Kozyavka; Knopka (Button) and Malyshka (Little One). After her, there were Belka (Squirrel) and Strelka (Arrow); Otvazhnaya (Brave One) and Snezhinka (Snowflake), and the rabbit Marfusa; Zvedochka (Little Star); Ugolyok (Coal) and Veterok (Breeze). Some died; many survived and were sent back; some ran away. As Olesya Turkina recounts in her wonderful book [*Soviet Space Dogs*](https://fuel-design.com/publishing/soviet-space-dogs/),
 
-::: column-margin
-![](img/sd-book-cover.jpg){width=100}
+::: {.column-margin}
+[![](img/sd-book-cover.jpg){width=100}](https://fuel-design.com/publishing/soviet-space-dogs/)
 :::
 
 ::: {.column-margin}
-<br />
-<br />
 <br />
 <br />
 <br />
@@ -84,7 +82,7 @@ Those that survived became stars, celebrated in children’s stories, pop songs,
 
 But it was Laika (Лайка, “barker,” from the Russian verb *laiat*, to bark) who captured the hearts of the world, as the first living creature to orbit the planet aboard Sputnik 2, before perishing about five hours into the mission due to inadequate thermal insulation in her capsule. After its orbit decayed several months later, the capsule was incinerated on re-entry into Earth atmosphere [@soviet_turkina_2014: 110]. Memorials were erected in Paris and Tokyo; as Turkina puts it, “the dog’s valiant little face with its pointy ears appeared on the front page of every newspaper around the world. Her poignant image came to symbolise both heroism and the human capacity for compassion” [@soviet_turkina_2014: 81-82].
 
-::: column-margin
+::: {.column-margin}
 
 ![](img/laika-postcard.jpg){width=100}
 
@@ -92,42 +90,46 @@ But it was Laika (Лайка, “barker,” from the Russian verb *laiat*, to ba
 
 After Laika, according to the Museum of Jurassic Technology, “[10 more dogs in 6 separate missions followed Laika’s courageous example culminating in the flight of Zvedochka (daughter of the stars)](https://www.mjtgiftshop.org/products/dogs-of-the-soviet-space-program-notecards).” The Museum’s memorial tribute to the Soviet space dogs, “[The Lives of Perfect Creatures](https://www.mjt.org/recentaddtions/creatures.html)”, includes oil paintings, notecards, a locket set, and a View-Master reel. 
 
-::: {column-margin}
+::: {layout="[1, 1, 1, 1, 1]"}
 
-![](img/ssd-portraits/laika.webp){.lightbox group="ssd-portraits" width=100}
+![](img/ssd-portraits/laika.webp){group="ssd-portraits"}
 
-![](img/ssd-portraits/belka.webp){.lightbox group="ssd-portraits" width=100}
+![](img/ssd-portraits/belka.webp){group="ssd-portraits"}
 
-![](img/ssd-portraits/strelka.webp){.lightbox group="ssd-portraits" width=100}
+![](img/ssd-portraits/strelka.webp){group="ssd-portraits"}
 
-![](img/ssd-portraits/ugolyok.webp){.lightbox group="ssd-portraits" width=100}
+![](img/ssd-portraits/ugolyok.webp){group="ssd-portraits"}
 
-![](img/ssd-portraits/zvedochka.webp){.lightbox group="ssd-portraits" width=100}
+![](img/ssd-portraits/zvedochka.webp){group="ssd-portraits"}
 :::
 
-::: {.column-margin}
+::: {.column-margin layout="[[1,1], [1,1]]"}
 
-![](img/mjt/mjt1.png){.lighthouse width=100 group="mjt"}
+![](img/mjt/mjt1.png){.lighthouse group="mjt"}
 
-![](img/mjt/mjt2.png){.lighthouse width=100 group="mjt"}
+![](img/mjt/mjt2.png){.lighthouse group="mjt"}
 
-![](img/mjt/mjt3.png){.lighthouse width=100 group="mjt"}
+![](img/mjt/mjt3.png){.lighthouse group="mjt"}
 
-![](img/mjt/mjt4.png){.lighthouse width=100 group="mjt"}
+![](img/mjt/mjt4.png){.lighthouse group="mjt"}
 
 :::
 
 Sacrificed to the geopolitical rivalry of the Cold War, memorialized across half a century of postage stamps, postcards, matchbooks, cigarette brands, oil paintings, and the names of indie bands (Laika and the Cosmonauts, Laika), these animals continue to haunt us.
 
-![](img/martin-parr/matryoshka.webp){.lighthouse width=100 group="martin-parr"}
+::: {.column-margin layout="[[1,1], [1, 1,1]]"}
 
-![](img/martin-parr/porcelain1.webp){.lighthouse width=100 group="martin-parr"}
+![](img/martin-parr/porcelain1.webp){group="martin-parr"}
 
-![](img/martin-parr/porcelain2.webp){.lighthouse width=100 group="martin-parr"}
+![](img/martin-parr/porcelain2.webp){group="martin-parr"}
 
-![](img/martin-parr/clock.webp){.lighthouse width=100 group="martin-parr"}
+![](img/martin-parr/matryoshka.webp){group="martin-parr"}
 
-![](img/martin-parr/cigarette-case.webp){.lighthouse width=100 group="martin-parr"}
+![](img/martin-parr/clock.webp){group="martin-parr"}
+
+![](img/martin-parr/cigarette-case.webp){group="martin-parr"}
+
+:::
 
 ## 2. Strays
 
