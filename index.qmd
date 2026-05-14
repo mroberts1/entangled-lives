@@ -1,36 +1,45 @@
 ---
 title: "Entangled Lives"
 subtitle: "Uncanny Animals in Cosmopolitical Documentary"
-author: 
-  name: Martin Roberts
-  url: https://mroberts.emerson.build
-  email: martin_roberts@emerson.edu
-  affiliation: 
-    - name: Emerson College
-      department: Visual & Media Arts
-      city: Boston
-      state: MA
-      country: US
-      url: www.emerson.edu
-date: 2024-03-16
-date-format: short
-description: Paper presented at the Society for Cinema & Media Studies Conference, Boston, “New Configurations of Globality in Documentary Media." 
+# author: 
+#   name: Martin Roberts
+#   url: https://mroberts1.github.io/entangled-lives
+#   email: martin_roberts@emerson.edu
+#   affiliation: 
+#     - name: Emerson College
+#       department: Visual & Media Arts
+#       city: Boston
+#       state: MA
+#       country: US
+#       url: www.emerson.edu
+# date: 2024-03-16
+# date-format: short
+# description: Paper presented at the Society for Cinema & Media Studies Conference, Boston, “New Configurations of Globality in Documentary Media." 
 format:
   html: 
-    toc: true
-    toc-depth: 2
+    backgroundcolor: "#EFEDE5"
+    toc: false
+    toc-depth: 3
     toc-location: right
     toc-title: '   '
     theme: 
       light: ember.scss
-      dark: [ember.scss, slate]
+      dark: darkly
     css: custom.scss
-    self-contained: true
-    grid: 
-      sidebar-width: 350px
-      body-width: 550px
-      margin-width: 350px
-      gutter-width: 2em
+    include-in-header: fonts.html
+    resources:
+      - fonts/
+    #self-contained: true
+    grid:
+        sidebar-width: 400px
+        body-width: 600px
+        #margin-width: 350px
+        #gutter-width: 1em
+    fontsize: 1em
+    linestretch: 1.5
+    smooth-scroll: true
+    linkcolor: "#2E5392"
+    link-external-newwindow: true
 lightbox: 
   match: auto
 fig-responsive: true
@@ -43,14 +52,6 @@ citation-location: document
 bibliography: https://api.citedrive.com/bib/42337c79-d127-4faa-8eda-51dbd9283c1e/references.bib?x=eyJpZCI6ICI0MjMzN2M3OS1kMTI3LTRmYWEtOGVkYS01MWRiZDkyODNjMWUiLCAidXNlciI6ICIxMTkxMiIsICJzaWduYXR1cmUiOiAiMzI1NzdiYmFlODMwMmM4MTkwOGJjZWIzYTY4OGMzNjBiNzI5OTc4ZGQ3MGM2M2QzNmE4MWI0ZWU5NzczNTBmNCJ9
 ---
 
-```{r}
-#| label: load-packages
-#| include: false
-
-library(tidyverse)
-library(palmerpenguins)
-```
-
 <div>
 
 <video autoplay loop muted playsinline controls="false" width="100%">
@@ -61,19 +62,32 @@ library(palmerpenguins)
 
 </div>
 
+::: {.column-margin}
+Paper presented at the Society for Cinema & Media Studies Conference, Boston, “New Configurations of Globality in Documentary Media."<br><br><br>
+[Dr. Martin Roberts](http://mroberts1.github.io/)\
+[Department of Visual & Media Arts](https://emerson.edu/academics/academic-departments/visual-media-arts)\
+[Emerson College](https://emerson.edu/)\
+[{{< fa regular envelope >}}](mailto:martin_roberts@emerson.edu) \| [{{< fa brands mastodon >}}](https://merveilles.town/@dokoissho) \| [{{< fa brands github >}}](https://github.com/mroberts1/) \| [{{< fa brands twitter >}}](https://twitter.com/mroberts_vma)\
+
+:::
+
+<br>
+
 ## 1. Perfect Creatures
 
 Before Laika, there were Dezik and Tsygan (Gypsy); Chizhik and Mishka (Little Bear); Albina (Whitey) and Kozyavka; Knopka (Button) and Malyshka (Little One). After her, there were Belka (Squirrel) and Strelka (Arrow); Otvazhnaya (Brave One) and Snezhinka (Snowflake), and the rabbit Marfusa; Zvedochka (Little Star); Ugolyok (Coal) and Veterok (Breeze). Some died; many survived and were sent back; some ran away. As Olesya Turkina recounts in her wonderful book [*Soviet Space Dogs*](https://fuel-design.com/publishing/soviet-space-dogs/),
 
 ::: {.column-margin}
+
 [![](img/sd-book-cover.jpg){width=100}](https://fuel-design.com/publishing/soviet-space-dogs/)
+
 :::
 
 ::: {.column-margin}
-<br />
-<br />
-<br />
-<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/924348494?h=e9d89c330e&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<br>
+<br>
+<br>
+<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/924348494?h=e9d89c330e&autoplay=0&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 :::
 
 > \[i\]t is estimated that between July 1951 and November 1960 over thirty suborbital flights were launched … In all, of the dogs who participated in those flights, at least fifteen died. The canine crews consisted of two dogs. This was a precaution in case one of the dogs displayed a non-typical, unusual reaction. Some of these dogs made multiple flights on geophysical rockets [@soviet_turkina_2014: 68].^[On the Soviet space dogs, see @soviet_turkina_2014 and @NELSONUnknownTitle2017.]
@@ -85,7 +99,6 @@ But it was Laika (Лайка, “barker,” from the Russian verb *laiat*, to ba
 ::: {.column-margin}
 
 ![](img/laika-postcard.jpg){width=100}
-
 :::
 
 After Laika, according to the Museum of Jurassic Technology, “[10 more dogs in 6 separate missions followed Laika’s courageous example culminating in the flight of Zvedochka (daughter of the stars)](https://www.mjtgiftshop.org/products/dogs-of-the-soviet-space-program-notecards).” The Museum’s memorial tribute to the Soviet space dogs, “[The Lives of Perfect Creatures](https://www.mjt.org/recentaddtions/creatures.html)”, includes oil paintings, notecards, a locket set, and a View-Master reel. 
@@ -101,23 +114,27 @@ After Laika, according to the Museum of Jurassic Technology, “[10 more dogs in
 ![](img/ssd-portraits/ugolyok.webp){group="ssd-portraits"}
 
 ![](img/ssd-portraits/zvedochka.webp){group="ssd-portraits"}
+
 :::
 
-::: {.column-margin layout="[[1,1], [1,1]]"}
+::: {.column-margin}
+::: {layout-ncol=2}
 
-![](img/mjt/mjt1.png){.lighthouse group="mjt"}
+![](img/mjt/mjt1.png){.lightbox group="mjt"}
 
-![](img/mjt/mjt2.png){.lighthouse group="mjt"}
+![](img/mjt/mjt2.png){.lightbox group="mjt"}
 
-![](img/mjt/mjt3.png){.lighthouse group="mjt"}
+![](img/mjt/mjt3.png){.lightbox group="mjt"}
 
-![](img/mjt/mjt4.png){.lighthouse group="mjt"}
+![](img/mjt/mjt4.png){.lightbox group="mjt"}
 
+:::
 :::
 
 Sacrificed to the geopolitical rivalry of the Cold War, memorialized across half a century of postage stamps, postcards, matchbooks, cigarette brands, oil paintings, and the names of indie bands (Laika and the Cosmonauts, Laika), these animals continue to haunt us.
 
-::: {.column-margin layout="[[1,1], [1, 1,1]]"}
+::: {.column-margin}
+::: {layout-ncol=2}
 
 ![](img/martin-parr/porcelain1.webp){group="martin-parr"}
 
@@ -129,6 +146,7 @@ Sacrificed to the geopolitical rivalry of the Cold War, memorialized across half
 
 ![](img/martin-parr/cigarette-case.webp){group="martin-parr"}
 
+:::
 :::
 
 ## 2. Strays
@@ -142,7 +160,9 @@ What is a “stray” exactly? Straying implies the idea of a digression or dive
 The history of the Soviet space dogs make a compelling case for the urgent need for what the Brazilian philosopher Juliana Fausto calls a cosmopolitics of animals [@a_fausto_2020]. Historically, Fausto explains, the denial of rights to animals originates in Aristotle’s celebrated declaration that “man is by nature a political animal”. If *only* humans are political animals, however, then non-human ones are excluded from political existence and the rights associated with it, and can be treated merely as tools for human purposes: food, transport, clothing, or the advancement of science. 
 
 ::: {.column-margin}
-![](img/fausto-cover.png){width=100}
+
+![](img/fausto-cover.png){width=200}
+
 :::
 
 Fausto’s book sets out to dismantle this anthropocentric framework, proposing in its place a cosmopolitical one that frames the rights of non-human animals as a new form of cultural citizenship. From Fausto's standpoint, the citizenship of non-human animals has the same legitimacy as that of oppressed human minorities, political refugees, or asylum seekers.
@@ -153,59 +173,66 @@ Laika checks not just one but all of these boxes: *errante*; *confinada*, *exper
 
 ## 4. Outcasts
 
-In film, Laika was recently the subject of the Austrian documentary *Space Dogs* (2019) by Elsa Kremser and Levin Peter.
+{{< video https://vimeo.com/982456252 >}}
 
-<iframe src="https://player.vimeo.com/video/924348508?h=90b7aae606&title=0&byline=0&portrait=0" width="640" height="268" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<small>[*Space Dogs*](https://www.raumzeitfilm.com/film/en-spacedogs/) (Elsa Kremser and Levin Peter (2019).</small>
 
-The film follows two ghostly reincarnations of Laika as they haunt the eerie liminal zones of Moscow by night, snarling at rivals and occasionally each another, in the perpetual quest for food or, when they get lucky, a cat. These street sequences are intercut with archival clips of the Soviet space dogs being handled by scientists in white lab coats, strapped into centrifuges, undergoing surgical procedures, confined in capsules so small that they are unable to turn around, or obliterated in launchpad explosions.
+In film, Laika was recently the subject of the Austrian documentary *Space Dogs* (2019) by Elsa Kremser and Levin Peter. The film follows two ghostly reincarnations of Laika as they haunt the eerie liminal zones of Moscow by night, snarling at rivals and occasionally each another, in the perpetual quest for food or, when they get lucky, a cat. These street sequences are intercut with archival clips of the Soviet space dogs being handled by scientists in white lab coats, strapped into centrifuges, undergoing surgical procedures, confined in capsules so small that they are unable to turn around, or obliterated in launchpad explosions.
 
-::: {.column-margin}
+:::: {.column-margin}
+::: {layout-ncol=2}
 
-![](img/space-dogs/sd1.jpg){.lighthouse group="space-dogs width=100}
+![](img/space-dogs/sd1.jpg){.lightbox group="space-dogs" width=200}
 
-![](img/space-dogs/sd3.jpg){.lighthouse group="space-dogs width=100}
+![](img/space-dogs/sd3.jpg){.lightbox group="space-dogs" width=200}
 
-![](img/space-dogs/sd2.jpg){.lighthouse group="space-dogs width=100}
+![](img/space-dogs/sd2.jpg){.lightbox group="space-dogs" width=200}
 
-![](img/space-dogs/sd4.jpg){.lighthouse group="space-dogs width=100}
-
+![](img/space-dogs/sd4.jpg){.lightbox group="space-dogs" width=200}
 :::
+::::
 
 The past decade has seen a surprising surge in documentary films that focus on the condition of stray animals, and frequently dogs, in cities around the globe. Examples include *Los Reyes*, a Chilean documentary about two dogs that inhabit a skatepark in Santiago; *Stray* depicts the entanglement (*emaranhamento*) of feral dogs in Istanbul with the lives of migrant Syrian teenagers displaced by the turmoil in their home country; *Clebs* \[a French slang word for a dog\], Halima Ouardiri’s short film about a canine refugee camp in Morocco; *Fog Dog*, a short set in Dhaka, Bangladesh by the Catalan artist Daniel Steegmann Mangané; *The Stray Story: A Dogumentary* (2021) by Christina Georgiou; and Fausto’s own co-produced experimental documentary *A Cosmopolitica dos Animais* (2021). Let us also not forget Tsai Ming-Liang’s *Stray Dogs* (2013) (even though its Chinese title, *Jiaoyou*, means “Excursion”) which equates the experience of an unhomed family in Taipei with the stray dogs in the liminal spaces both inhabit.
 
-::: {.column-margin}
+:::: {.column-margin}
+::: {layout-ncol=3}
 
-![](img/movie-posters/los-reyes.jpg){.lighthouse group="movie-posters" width=100} 
+![](img/movie-posters/los-reyes.jpg){.lightbox group="movie-posters" width=100} 
 
-![](img/movie-posters/stray-poster.jpg){.lighthouse group="movie-posters" width=100}
+![](img/movie-posters/stray-poster.jpg){.lightbox group="movie-posters" width=100}
 
-![](img/movie-posters/clebs.jpg){.lighthouse group="movie-posters" width=100}
+![](img/movie-posters/clebs.jpg){.lightbox group="movie-posters" width=100}
 
-![](img/movie-posters/stray-story.jpg){.lighthouse group="movie-posters" width=100}
+![](img/movie-posters/stray-story.jpg){.lightbox group="movie-posters" width=100}
 
-![](img/movie-posters/space-dogs-poster.jpg){.lighthouse group="movie-posters" width=100}
+![](img/movie-posters/space-dogs-poster.jpg){.lightbox group="movie-posters" width=100}
 
-![](img/movie-posters/cody.jpg){.lighthouse group="movie-posters" width=100}
+![](img/movie-posters/cody.jpg){.lightbox group="movie-posters" width=100}
 
-![](img/movie-posters/stray-dogs.jpg){.lighthouse group="movie-posters" width=100}
+![](img/movie-posters/stray-dogs.jpg){.lightbox group="movie-posters" width=100}
+
 :::
+::::
 
 How are we to account for this surge in documentary films about stray animals, which is of course not just limited to dogs (*Kedi* and *Crazy Cat Lady* are about the exploding feral cat populations of Istanbul and Los Angeles respectively; Theo Anthony’s *Rat Film* is about Baltimore)?
 
-::: {.column-margin}
+:::: {.column-margin}
+::: {layout-ncol=3}
 
-![](img/movie-posters/kedi.jpg){.lighthouse group="movie-posters" width=100}
+![](img/movie-posters/kedi.jpg){.lightbox group="movie-posters" width=100}
 
-![](img/movie-posters/ccl.jpg){.lighthouse group="movie-posters" width=100}
+![](img/movie-posters/ccl.jpg){.lightbox group="movie-posters" width=100}
 
-![](img/movie-posters/rat-film.jpg){.lighthouse group="movie-posters" width=100}
+![](img/movie-posters/rat-film.jpg){.lightbox group="movie-posters" width=100}
 
 :::
+
+::::
 
 But the stray dogs in the documentaries I have mentioned are not merely metaphors for human outcasts: on the contrary, it is the non-human animals’ experience of exclusion and alienation that is their primary focus, rather than merely peripheral to human experience. Human and non-human animals co-exist on the same plane. In Moscow, Istanbul, Santiago, or any other 21C global city, the street is the contact zone where human and non-human animals encounter one another and their lives become intertwined or entangled (*emaranhadas* as Fausto would put it).
 
 The documentaries I have mentioned show the interdependency that develops between stray dogs and the human street dwellers whom they live among: in Santiago (*Los Reyes*), the teenagers who hang out at the skatepark, whose conversations are only overheard in footage that shows only the dogs; in Istanbul, the undocumented refugees of the Syrian war. Halima Ouardiri’s *Clebs* shifts the perspective even further: the Moroccan rescue center that houses 750 abandoned dogs has much in common with a human refugee camp, its population trapped and focused only on eating and sleeping. Under these harsh conditions, new relations of reciprocity, of symbiosis develop: human and non-human become mutual support animals for one other. All of the films are in different ways about *companionship*, the forging of interspecies bonds in the absence of traditional forms of community.
-s
+
 ## 5. Phantoms
 
 Both *Space Dogs* and Fausto’s writing on animals are (ironically) haunted by the Freudian specter of the *uncanny*: stray animals are figured as phantoms haunting the peripheral vision of the city, manifestations of its repressed histories, the unconscious of global capitalism. No wonder that the dreams of sleeping animals are such resonant motifs in films such as *Los Reyes* or *Space Dogs*. In its German sense of the *un-homely* (*unheimlich*), the uncanny provides another way of understanding the experience of being without home in the socio-political sense, whether human or non-human.
@@ -218,7 +245,29 @@ In an essay on Daniel Steegmann Mangrané’s *Fog Dog*, Fausto references the g
 
 Haunted by ghost dogs, sacrificed not to space travel but the nuclear priesthood, our contemporary world remains “populated by angry, melancholic and expectant specters,” which remind us of our continuing disregard for the animal species who share our planetary home.
 
+::: {.column-margin}
+
+::: {.video-caption}
+{{< video https://vimeo.com/924348564 >}}
+[[*Fog Dog*](https://youtu.be/biKYMQnuICI) (Daniel Steegmann Mangrané 2019-20).]{.small}
+:::
+
+::: {.video-caption}
+{{< video https://vimeo.com/924348579 >}}
+[[*Los Reyes*](https://grasshopperfilm.com/film/los-reyes/) (Bettina Perut and Iván Osnovikoff, 2018).]{.small}
+:::
+
+::: {.video-caption}
+{{< video https://vimeo.com/924348542 >}}
+[[*Los Reyes*](https://grasshopperfilm.com/film/los-reyes/) (Bettina Perut and Iván Osnovikoff, 2018).]{.small}
+:::
+
+:::
+
 Several of the documentaries I have been discussing include sequences of dogs howling, whether in response to police sirens or (in Dhaka and Istanbul) the Muslim call to prayer. The animals in these films literally cry out to us, their anguish a kind of protest against a human-dominated world in which their existence remains peripheral. The current generation of animal documentaries I have been discussing suggests that at least some human animals are finally starting to listen.
+
+{{< video https://vimeo.com/924348601 >}}
+[[*Stray*](https://www.straymovie.com/) ([Elizabeth Lo](https://www.elizabeth-lo.com/), 2020).]{.small}
 
 ## 6. Revenants
 

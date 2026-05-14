@@ -5,6 +5,6 @@
 
 /.quarto/
 /_site/
-/img/
-/video/
 .positai
+
+**/*.quarto_ipynb
